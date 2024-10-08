@@ -24,7 +24,7 @@ public class Category {
 
     private String name;
     
-    // One-to-Many relationship with Product
+    
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
     private Set<Product> products;
 }
